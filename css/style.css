@@ -1,0 +1,81 @@
+:root {
+    --mainColor: #FEC260;
+
+    
+}
+
+body::selection {
+   content: "";
+    background-color: var(--mainColor);
+    color: white; 
+} 
+
+body {
+    
+    background-color: #F7ECDE;
+}
+
+h1 {
+
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    font-style: normal;
+    position: relative;
+    z-index: 200;
+
+
+}
+
+
+h1::before {
+    content: "";
+    width: 16.60rem;
+    height: 1.25rem;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+h1:hover::before {
+    height: 2.5rem;
+}
+
+#your-sites {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+    font-size: 1rem;
+
+}
+
+h2 {
+    font-family: "Righteous";
+    font-weight: 500;
+    font-style: normal;
+    color: #5EA757;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+}
+
+span {
+    font-family: "Righteous";
+    font-weight: 500;
+    font-style: normal;
+    color: #A7AB4B;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+}
+
+label {
+    font-family: "PT Sans Caption";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}

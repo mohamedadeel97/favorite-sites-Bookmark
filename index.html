@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <title>Bookmarker</title>
+    <link rel="icon" type="image/x-icon" href="images/bookmark.png">
+
+</head>
+
+<body>
+    <div class="container-sm">
+        <section class="container py-5">
+            <h1 class="text-center">Bookmarker</h1>
+        </section>
+        <section id="your-sites" class="pt-2">
+            <h2 class="text-center pt-4"><i class="fa-solid fa-bookmark" style="color: #5EA757;"></i> Bookmark your
+                <span>favorite sites <i class="fa-solid fa-bookmark" style="color: #ACAB4B;"></i></span>
+            </h2>
+            <form class="px-5 pt-3">
+                <label for="Site-Name" class="py-2"><i class="fa-solid fa-book-bookmark pe-2"
+                        style="color: #000000;"></i>
+                    Site Name</label>
+                <input id="Site-Name" class="form-control focus-ring focus-ring-warning" placeholder="Bookmark Name" oninput="validateName()"
+                    type="text ">
+                <label class="py-2" for="Site-URL"> <i class="fa-solid fa-link pe-2" style="color: #000000;"></i> Site
+                    URL</label>
+                <input class="form-control focus-ring focus-ring-warning" id="Site-URL" placeholder="Website URL" oninput="validateUrl()" type="text ">
+                <div class="text-center"> <button type="submit" onclick="addSite()" id="submit-btn"
+                        class="btn btn-danger  px-4 my-4">Submit</button>
+                </div>
+            </form>
+        </section>
+        <table id="table" class="table text-center mt-4">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
